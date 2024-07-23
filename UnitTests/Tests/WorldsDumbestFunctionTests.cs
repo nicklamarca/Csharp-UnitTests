@@ -16,7 +16,14 @@ namespace UnitTests.Tests
                 string result = dumbFunction.ReturnsDumbThingsIfZero(num);
 
                 //Assert - What should the result be
-
+                if (result == "This Is Dumb")
+                {
+                    Console.WriteLine("PASSED: WorldsDumbestFunction_ReturnsDumbThingsIfZero_ReturnString");
+                }
+                else
+                {
+                    Console.WriteLine("FAILED: WorldsDumbestFunction_ReturnsDumbThingsIfZero_ReturnString");
+                }
 
             }
             catch (Exception ex)
